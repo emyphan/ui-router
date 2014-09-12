@@ -124,7 +124,7 @@ describe("resolve", function () {
       expect(r).toBeResolved();
       expect(resolvedValue(s)).toEqual({ fun: true, games: true });
     });
-    
+
     it("only accepts promises from $resolve as parent", inject(function ($q) {
       expect(caught(function () {
         $r.resolve({}, null, $q.defer().promise);

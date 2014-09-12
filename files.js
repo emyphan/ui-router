@@ -16,7 +16,8 @@ routerFiles = {
     'test/testUtils.js'
   ],
   test: [
-    'test/*Spec.js',
+//    'test/*Spec.js',
+    'test/resolveSpec.js',
     'test/compat/matchers.js'
   ],
   angular: function(version) {
